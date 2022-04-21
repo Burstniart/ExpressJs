@@ -13,6 +13,11 @@ app.get('/', (req, res) => {
 app.get('/launchx', (req, res) => {
     res.send('Welcome to LaunchX')
 })
+// return object in explorersInNode
+app.get('/explorersInNode', (req, res) => {
+    const explorer = {name: 'Explorer', msg: 'Hi'}
+    res.send(explorer)
+})
 
 // initialize app
 app.listen(port, () =>  {
